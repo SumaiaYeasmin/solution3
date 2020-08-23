@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: left;
+    font-size: 30px;
+    background: rgb(190, 188, 188) ;
+    font-family: serif;
+    display: block;
+    padding: 25px 15px ;
+    
+}
+body{
+    background:#fefefe ;
+    font-family: sans-serif;
+}
+
+.container{
+    max-width: 90%;
+    margin:  50px auto;
+   
+}
+.heading{
+  text-align: center;
+  font-size: 30px;
+margin-bottom: 50px;
+
+}
+.row{
+    
+    display: flex;
+    font-size: 30px;
+    justify-content: space-around;
+    flex-flow: wrap;
+    flex-shrink: 1;
+
+}
+.card{
+    width:20%;
+    border: 2px solid black;
+    
+    background:rgb(184, 182, 182) ;
+    border:1px solid #ccc ;
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+.card-header{
+    text-align: center;
+ 
+    padding: 30px 5px;
+    color: black;
+
+}
+.card-body{
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+@media screen and (max-width:1000px){
+    .card{
+        width: 40%;
+
+    }
+}
+@media screen and (max-width:620px){
+    .container{
+        width: 100%;
+    }
+    .heading{
+        padding: 20px;
+        font-style: 20px;
+    }
+    .card{
+        width: 80%;
+        
+    }
+}
+.slide{
+    height:79% ;
+    width:15%;
+    font-size: 14px;
+    float: right;
+    z-index: 2;
+    background-color: #ddd;
+    
+    
+    }
+    .slide ul{
+    margin-left: 10px;
+    
+    }
+    .slide ul li{
+    list-style-type:none ;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    }
+    .slide ul li:hover{
+    color:  rgb(206, 203, 203);
+    }
+    #mbtn , #cbtn{
+    font-size: 30px;
+    margin: 10px;
+    color:rgb(206, 203, 203);
+    display: none;
+    
+    }
+    @media only screen and (max-width:980px)
+    {
+    .slide{
+        width: 34%;
+        z-index: 20;
+        top: 133px;
+        position: fixed;
+        font-size: 13px;
+        display: none;
+        background: #f1f3f4 ;
+    }
+    #mbtn{
+        display: block;
+    }
+    }
+
